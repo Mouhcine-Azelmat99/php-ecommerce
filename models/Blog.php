@@ -9,7 +9,7 @@ class Blog{
         $stmt =null;
     }
     static public function getBlogById($data){
-        $id=$data['id'];
+        $id=$data['blog_id'];
         try{
             $stmt = DB::connect()->prepare('SELECT * FROM blog WHERE id = :id');
             $stmt->execute(array(":id" => $id));

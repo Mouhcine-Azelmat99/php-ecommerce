@@ -9,7 +9,7 @@ class BlogController{
     public function getBlog(){
         if(isset($_POST["submit"])){
             $data = array(
-                'id' =>$_POST["blog_id"]
+                'blog_id' =>$_POST['blog_id']
             );
             $blog = Blog::getBlogById($data);
             return $blog;
