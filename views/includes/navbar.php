@@ -41,10 +41,6 @@
             <li class="nav-item">
               <a href="<?php echo BASE_URL ?>product" class="nav-link">Products</a>
             </li>
-            
-            <li class="nav-item">
-              <a href="#blog" class="nav-link scroll-link">Blog</a>
-            </li>
 
             <li class="nav-item">
               <a href="#about" class="nav-link scroll-link">About</a>
