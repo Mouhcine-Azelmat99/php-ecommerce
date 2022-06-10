@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark text-white">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark text-white py-5">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
                 <a href="<?php echo BASE_URL ;?>" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-warning text-decoration-none">
                     <span class="fs-5 d-none d-sm-inline">ECOMMERCE ADMIN</span>
@@ -19,10 +19,7 @@
                         <a href="<?php echo BASE_URL ;?>categories" class="nav-link text-white px-0 align-middle">
                             <i class="fas fa-utensils"></i> <span class="ms-1 d-none d-sm-inline">CATEGORIES</span></a>
                     </li>
-                    <li class="nav-item my-1">
-                        <a href="<?php echo BASE_URL ;?>blogs" class="nav-link text-white px-0 align-middle">
-                            <i class="fas fa-clipboard-list"></i> <span class="ms-1 d-none d-sm-inline">Blogs</span></a>
-                    </li>
+
                     <li class="nav-item my-1">
                         <a href="<?php echo BASE_URL ;?>contacts" class="nav-link text-white px-0 align-middle">
                             <i class="fas fa-comments"></i> <span class="ms-1 d-none d-sm-inline">Contacts</span> </a>

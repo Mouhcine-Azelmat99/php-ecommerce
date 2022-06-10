@@ -2,9 +2,6 @@
   $cat=new CategoriesController();
   $categories=$cat->getAllCategories();
 
-  $blogs=new BlogController();
-  $blogs=$blogs->getAllBlogs();
-
 ?>
 <?php include_once'views/includes/alerts.php' ?>
 <!-- Back to top button -->
@@ -227,47 +224,6 @@
 
       </div>
     </section> -->
-
- <!-- blog -->
-    <section class="section blog" id="blog">
-      <div class="title-container">
-        <div class="section-titles">
-          <div class="section-title active">
-            <span class="dot"></span>
-            <h1 class="primary-title">Latest News</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-container container">
-        <div class="glide" id="glide3">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <?php 
-                    foreach($blogs as $blog) :
-              ?>
-              <li class="glide__slide">
-                <div class="blog-card">
-                  <div class="card-header">
-                    <img src="./public/uploads/<?php echo $blog['image'];?>" alt="">
-                  </div>
-                  <div class="card-footer">
-                    <h3><?php echo $blog['title'] ?><h3>
-                    <span>By Admin</span>
-                    <p><?php echo $blog['content'] ?></p>
-                    <form method="post" action="<?php echo BASE_URL?>blog">
-                      <input type="hidden" name="blog_id" value="<?php echo $blog['id'] ?>">
-                      <button name="submit" type="submit" >Read More</button>
-                    </form>
-                  </div>
-                </div>
-              </li>
-              <?php endforeach ?>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Contact section  -->
     <section class="contact" id="contact">
